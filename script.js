@@ -26,7 +26,21 @@ vocab.push('BigInt', 'function-scoped', 'block-scoped')
 const x = 2
 const y = "6"
 
+// ****** Type Conversions
 console.log(x, y)
+
+// Number to String
 console.log(x.toString())
 console.log(String(x))
 console.log(x + "")
+
+// String to Number
+console.log(Number(y))
+console.log(parseInt(y))
+// parseInt extracts the interger from the string
+// parseFloat extracts the decimal
+
+
+// ****** Comparison Operators 
+// == is the loose equality operator 
+// === is the strict equality operator 
