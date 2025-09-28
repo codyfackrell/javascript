@@ -23,4 +23,10 @@ vocab.push('npm')
 // BigInt = a data type that store big integers that are not supported by the Number data type
 vocab.push('BigInt', 'function-scoped', 'block-scoped')
 
-console.log(vocab)
+const x = 2
+const y = "6"
+
+console.log(x, y)
+console.log(x.toString())
+console.log(String(x))
+console.log(x + "")
