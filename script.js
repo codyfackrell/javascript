@@ -89,6 +89,8 @@ console.log(cond)
 
 // ****** Switch statement
 // allows you to 'switch on' a particular value to check for certain cases against that value
+vocab.push('switch statements')
+
 const value = 48
 
 switch (value) {
@@ -101,4 +103,35 @@ switch (value) {
     default: 
         console.log('no convo')
         break;
+}
+
+// Examples below (copy and pasted) of the readability of if/else if statements vs. switch statement 
+// switch statements are useful (in certain cases) for readability and effecient execution 
+
+// Using if-else if
+let day = 'Monday';
+if (day === 'Monday') {
+  console.log('Start of the week');
+} else if (day === 'Tuesday') {
+  console.log('Second day');
+} else if (day === 'Wednesday') {
+  console.log('Mid-week');
+} else {
+  console.log('Other day');
+}
+
+// Using switch
+let daySwitch = 'Monday';
+switch (daySwitch) {
+  case 'Monday':
+    console.log('Start of the week');
+    break;
+  case 'Tuesday':
+    console.log('Second day');
+    break;
+  case 'Wednesday':
+    console.log('Mid-week');
+    break;
+  default:
+    console.log('Other day');
 }
