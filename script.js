@@ -44,3 +44,44 @@ console.log(parseInt(y))
 // ****** Comparison Operators 
 // == is the loose equality operator 
 // === is the strict equality operator 
+// != not equal to
+
+console.log(1 === "1")
+console.log(1 == "1")
+
+console.log(3 < "1")
+console.log(1 < "3")
+
+
+// ****** Logical Operators 
+// && is 'and'
+// || is 'or'
+// ! is 'not'
+
+vocab.push('truthy', 'falsey', 'logical operators theroy')
+
+
+// ****** Conditionals
+// if
+// else if 
+// else
+
+if (true) {
+    console.log('hello world')
+} else if (false) {
+    console.log("dawg")
+} else {
+    console.log("cheese")
+}
+
+// In JS, you don't need braces if it is a single statement in the block, even if you use else:
+if (false)
+    console.log('hello world')
+else 
+    console.log('run')
+
+// ternary condition
+// ? seperates the condition and the ifTrue statement
+// : seperates the ifTrue statement and the ifFalse statement 
+const cond = 2 < 3 ? "okay cool" : "no" 
+console.log(cond)
