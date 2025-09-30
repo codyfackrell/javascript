@@ -81,7 +81,24 @@ else
     console.log('run')
 
 // ternary condition
-// ? seperates the condition and the ifTrue statement
-// : seperates the ifTrue statement and the ifFalse statement 
+// ? seperates the condition and the ifTrue statement ('if')
+// : seperates the ifTrue statement and the ifFalse statement ('else')
 const cond = 2 < 3 ? "okay cool" : "no" 
 console.log(cond)
+
+
+// ****** Switch statement
+// allows you to 'switch on' a particular value to check for certain cases against that value
+const value = 48
+
+switch (value) {
+    case 48:
+        console.log('jimmie is the goat')
+        break;
+    case 24:
+        console.log('jeff is not the goat')
+        break;
+    default: 
+        console.log('no convo')
+        break;
+}
