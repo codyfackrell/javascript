@@ -167,3 +167,5 @@ const [a, b] = [1 , 2]
 
 vocab.push('destructing (array)', 'spread operator')
 
+
+// While Loop / Do Loop
