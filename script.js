@@ -164,3 +164,6 @@ const arr3 = Array.from("hello")
 // array destructing 
     // destructing means to unpack values from an array. For example, if the array is [1, 2] and I want a = 1 and b = 2, destructing looks like this:
 const [a, b] = [1 , 2]
+
+vocab.push('destructing (array)', 'spread operator')
+
