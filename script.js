@@ -135,3 +135,32 @@ switch (daySwitch) {
   default:
     console.log('Other day');
 }
+
+// ****** Array
+const arr = [1, 2, 3, true, "hello"]
+
+// Creating an empty array that can be dynamic 
+const arr2 =  new Array(5)
+    // output would be an empty array with five values
+
+// creating an array from a given value
+const arr3 = Array.from("hello")
+    // output: [ 'h', 'e', 'l', 'l', 'o' ]
+// There is a lot you can do with the "Array." when initializing an array
+
+// Methods on Arrays
+// .pop = removes the last item from an array
+// .shift = removes the first item from an array
+// .unshift = adds an item to the first index of an array
+// .push = adds an item to the last index of an array 
+// .indexOf = gets you the first occurance of the requested value
+// .lastIndexOf = gets you the last occurance of the requested value
+// .includes = checks if a value is part of an array. returns true or false. 
+// .concat = joins two arrays together by creating a new array (meaning you must initialize a new array)
+// .join = adds all the elements in an array into a string (include seporator, if not specified the default is a comma)
+// .slice = take a portion of an array by creating a new array (params: index start, index end)
+// .splice = removes elements from an array by creating a new array with the deleted elements, the orginal array has the request elements removed (params: index start, number to delete)
+
+// array destructing 
+    // destructing means to unpack values from an array. For example, if the array is [1, 2] and I want a = 1 and b = 2, destructing looks like this:
+const [a, b] = [1 , 2]
