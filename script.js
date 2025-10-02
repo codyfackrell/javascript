@@ -168,14 +168,14 @@ const [a, b] = [1 , 2]
 vocab.push('destructing (array)', 'spread operator')
 
 
-// While Loop / Do Loop
+// ****** While Loop / Do Loop
 // while loops will continue to execute code while the condition is true until the condition is false. 
 // Do Loops allow you to check the condition after the code is executed rather than before
 
 let incre = 0
-let decre = 5
+let decre = 3
 
-while (incre < 5) {
+while (incre < 3) {
     console.log('a while loop')
     incre = incre + 1
 }
@@ -184,3 +184,24 @@ do {
     console.log('a do loop')
     decre = decre - 1
 } while (decre > 0)
+
+
+
+// ****** For Loop
+// for loops have the following expressions: for (initialization; condition; increment/decrement) {}
+// initialize the variable, set the condition of running the loop, the increment/decrement is optional
+for (let i = 0; i < 4; i++) {
+    console.log('hi')
+}
+
+const hendrick = [5, 9, 24, 48]
+
+for (let i = 0; i < hendrick.length; i++) {
+    console.log(hendrick[i])
+}
+// OR
+const penske = [2, 12, 21, 22]
+
+for (let value of penske) {
+    console.log(value)
+}
