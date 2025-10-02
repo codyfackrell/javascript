@@ -205,3 +205,6 @@ const penske = [2, 12, 21, 22]
 for (let value of penske) {
     console.log(value)
 }
+
+// for loops (first case) can be useful when needing to access the index directly (e.g., using i + 1), updating the values
+// for...of loops (second case) useful when you just need display or iterate through the values. You can even iterate any iterable object, like a strings (e.g., "hello")
