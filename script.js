@@ -169,3 +169,18 @@ vocab.push('destructing (array)', 'spread operator')
 
 
 // While Loop / Do Loop
+// while loops will continue to execute code while the condition is true until the condition is false. 
+// Do Loops allow you to check the condition after the code is executed rather than before
+
+let incre = 0
+let decre = 5
+
+while (incre < 5) {
+    console.log('a while loop')
+    incre = incre + 1
+}
+
+do {
+    console.log('a do loop')
+    decre = decre - 1
+} while (decre > 0)
