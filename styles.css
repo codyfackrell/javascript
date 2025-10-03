@@ -1,0 +1,9 @@
+/* to select classes you use a .className */
+.container {
+    color: white
+}
+
+/* to select id you use a #idName */
+#folder {
+    font-size: medium;
+}
