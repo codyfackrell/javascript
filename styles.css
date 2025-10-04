@@ -3,7 +3,18 @@
     color: white
 }
 
+h1.container {
+    /* this is all h1 with the 'container' classes will only be affected */
+    text-align: center;
+}
+
 /* to select id you use a #idName */
 #folder {
     font-size: medium;
+}
+
+.property {
+    /* a list of several properties used in css */
+    color: black;   /* text color */
+    background-color: white;    /* background color */
 }
