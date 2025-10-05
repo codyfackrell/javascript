@@ -258,3 +258,11 @@ for (let key in obj) {
     console.log(key)
 }
 // note: in the above for loop, you use 'in' when looping through an object and 'of' when looping through something iterable like an array
+
+// you can combine objects by using the spread operator. For example:
+// const obj3 = {...obj, ...obj2}
+
+// destructing objects:
+const { make, year } = obj
+
+console.log(make, year)
