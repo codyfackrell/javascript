@@ -214,7 +214,7 @@ for (let value of penske) {
 vocab.push('JSON')
 
 // objects are packages of property-value pairs that are used together.
-// objects are within set of braces. They have properties associated with values
+// objects are within set of braces. They have properties (aka 'keys') associated with values
 
 const obj = {
     make: 'honda',
@@ -246,3 +246,15 @@ obj.owners = ['cody', 'bethany']
 
 // Bracket Notation 
 obj['model'] //notice the property is in quotations
+
+// you can delete a property by using the delete keyword then referencing the property:
+// delete obj.year
+
+// to loop through the property-value pairs in an object:
+Object.keys(obj)
+Object.values(obj)
+
+for (let key in obj) {
+    console.log(key)
+}
+// note: in the above for loop, you use 'in' when looping through an object and 'of' when looping through something iterable like an array
