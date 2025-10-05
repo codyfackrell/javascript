@@ -208,3 +208,41 @@ for (let value of penske) {
 
 // for loops (first case) can be useful when needing to access the index directly (e.g., using i + 1), updating the values
 // for...of loops (second case) useful when you just need display or iterate through the values. You can even iterate any iterable object, like a strings (e.g., "hello")
+
+// ****** Objects
+// JSON = Javascript Object Notation (plain text for storing and transporting data, similar to js object syntax)
+vocab.push('JSON')
+
+// objects are packages of property-value pairs that are used together.
+// objects are within set of braces. They have properties associated with values
+
+const obj = {
+    make: 'honda',
+    model: "civic",
+    year: 2009,
+
+    //functions can be in objects
+    start: function() {
+        return 'You just fired up the car'
+    }, 
+
+    //objects can be in objects
+    repairDate: {
+        oilChange: '05 May 2025',
+        batteryReplacement: '23 September 2022'
+    }
+}
+
+// accessing properties of the object:
+// Dot Notation
+obj.make
+obj.start() //calling the function
+obj.repairDate.oilChange // calling a property in the object that is in the object
+
+obj.model = 'accord' // reassigning property
+
+// creating new properties by referencing the object and the new prop name
+obj.owners = ['cody', 'bethany']
+
+// Bracket Notation 
+obj['model'] //notice the property is in quotations
