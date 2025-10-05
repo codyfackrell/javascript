@@ -266,3 +266,22 @@ for (let key in obj) {
 const { make, year } = obj
 
 console.log(make, year)
+
+
+// ****** Sets
+const mySet = new Set([1, 2, 3]);
+mySet.add(1)
+mySet.delete(1)
+mySet.has(1)
+mySet.size
+
+for (const value of mySet) {
+    console.log(value)
+}
+
+mySet.clear()
+
+// if you have a set and want to convert it to an array:
+const arraySet = Array.from(mySet)
+// OR
+const arraySet2 = [...mySet]
