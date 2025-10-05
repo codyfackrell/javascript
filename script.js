@@ -211,7 +211,7 @@ for (let value of penske) {
 
 // ****** Objects
 // JSON = Javascript Object Notation (plain text for storing and transporting data, similar to js object syntax)
-vocab.push('JSON')
+vocab.push('JSON', 'iterable')
 
 // objects are packages of property-value pairs that are used together.
 // objects are within set of braces. They have properties (aka 'keys') associated with values
@@ -269,6 +269,9 @@ console.log(make, year)
 
 
 // ****** Sets
+// sets (which are js objects) are a collection of unique values of any type. Sets enforces that only unique values are added and any attempt to add a duplicate value would be ignored. 
+// sets do not contain key-value pairs, they only contain the values (therefore, you can not access values by referencing a key or index). you access values by using the 'has()' method.
+// Use cases: filtering duplicate ID's or storing a list 
 const mySet = new Set([1, 2, 3]);
 mySet.add(1)
 mySet.delete(1)
