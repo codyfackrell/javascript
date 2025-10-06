@@ -17,4 +17,5 @@ h1.container {
     /* a list of several properties used in css */
     color: black;   /* text color */
     background-color: white;    /* background color */
+    font-size: 10px; /* size of font, can use px, rem, % */
 }
