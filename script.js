@@ -295,7 +295,7 @@ const numMap = new Map([[48, "Jimmie Johnson"], [11, "Denny Hamlin"]])
 
 // To add something to the map. Notice it doesn't have brackets.
 numMap.set(24, 'Jeff Gordon')
-// To delete something from the map. You can just use the index.
+// To delete something from the map. You can just use the key.
 numMap.delete(11)
-// 
-console.log(numMap.get(48))
+// To get the value of the key entered. 
+numMap.get(48)
