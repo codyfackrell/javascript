@@ -329,3 +329,27 @@ try {
 
 vocab.push('error handling')
 
+
+// ****** Functions
+    // you can add as many parameters as you want, and you can set a default value. 
+function greet(name, age=12) {
+    console.log(`welcome ${name}, you are age ${age}`)
+}
+// OR
+const hello = function(name) {
+    console.log('hello ' + name)
+}
+
+// arrow function
+const goodbye = (name) => {
+    console.log('goodbye ' + name)
+}
+// OR
+
+const talkLater = (name) => console.log(`talk later, ${name}`)
+
+greet('lucy')
+greet('jack', 21)
+hello('jill')
+goodbye('parker')
+talkLater('sue')
