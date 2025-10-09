@@ -299,3 +299,17 @@ numMap.set(24, 'Jeff Gordon')
 numMap.delete(11)
 // To get the value of the key entered. 
 numMap.get(48)
+// To check if a value exists (returns boolean)
+numMap.has(11)
+// To check the size of the map
+numMap.size
+// To loop through the map
+    // note: if you want just key or value specify when initializing (e.g. const key of numMap.keys)
+for (const [key, value] of numMap) {
+    console.log(value + " drives car #" + key)
+}
+
+const carArr = Array.from(numMap)
+
+// to clear or delete all key-value pairs in the map
+myMap.clear()
