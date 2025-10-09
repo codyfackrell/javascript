@@ -325,4 +325,7 @@ try {
 }
 
 // if you want to generate your own execptions:
-throw new Error('this is not good!')
+// throw new Error('this is not good!')
+
+vocab.push('error handling')
+
