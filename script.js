@@ -313,3 +313,16 @@ const carArr = Array.from(numMap)
 
 // to clear or delete all key-value pairs in the map
 myMap.clear()
+
+
+// ****** Error Handling
+try {
+    riskyFunction();
+} catch (error) { // not required to add a variable , only if you want to see what the error is
+    console.error("An error occured:", error.message)
+} finally {
+    console.log("Cleanup code can go here"); // always runs
+}
+
+// if you want to generate your own execptions:
+throw new Error('this is not good!')
