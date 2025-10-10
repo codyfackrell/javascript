@@ -390,3 +390,27 @@ console.log(sum)
 const numArray = [4, 283, 3920, 434, 23, 59, 100, 203939]
 const oddNumbers = numArray.filter(num => num % 2 != 0)
 console.log(oddNumbers)
+
+// 'this' keyword
+    // you will be unable to use the this keyword inside an arrow function
+
+// this will work. with the normal function 'this' is defined when you call a function
+const person = {
+    name: 'Lucy',
+    greet() {
+        console.log(`Hello, my name is ${this.name}`);
+    },
+}
+
+// this will not work. arrow functions inherit 'this' at the time it is defined, not when it is called. It is looking in the global scope for a this.name. if it was inside the function it would inherit it from the function scope
+const person2 = { 
+    name: 'Joe',
+    greet: () => {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+}
+
+person.greet()
+person2.greet()
+
+vocab.push('scope')
