@@ -391,7 +391,7 @@ const numArray = [4, 283, 3920, 434, 23, 59, 100, 203939]
 const oddNumbers = numArray.filter(num => num % 2 != 0)
 console.log(oddNumbers)
 
-// 'this' keyword
+// ****** 'this' keyword
     // you will be unable to use the this keyword inside an arrow function
 
 // this will work. with the normal function 'this' is defined when you call a function
@@ -414,3 +414,29 @@ person.greet()
 person2.greet()
 
 vocab.push('scope')
+
+
+// ****** Promises
+    // promise is an object that respresents the eventual completion or failure of an asynchronous operation.
+    // promises are used when you don't know how long something will take to complete (e.g., file operations like reading or writing to disk, sending network request, API requests)
+const myPromise = new Promise((resolve, reject) => {
+    // Asynchronous operation
+    if (true) {
+        resolve('good'); // Fulfill the promise
+    } else {
+        reject('bad'); // Reject the promise
+    }
+});
+
+// .then is used for when the promise is resolved, it will then do the following. the resolve parameter above is, esentially equal to the function that we pass in .then
+// .catch is used for when the promise is rejected.
+// .finally is option and will happen whether the promise is resolved or rejected
+myPromise.then((value) => {
+    console.log(value)
+}).catch((value) => {
+    console.log(value)
+}).finally(() => {
+    console.log('I will always be here')
+})
+
+vocab.push('promises')
