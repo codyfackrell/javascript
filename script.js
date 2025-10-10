@@ -353,3 +353,40 @@ greet('jack', 21)
 hello('jill')
 goodbye('parker')
 talkLater('sue')
+
+vocab.push('rest parameters')
+// Rest Parameters = allow a function to accept an indefinate number of arguments as an array
+
+function addNums(...numbers) {
+    return [1, 2 ]
+}
+
+// .map function
+    // applys a function to every element inside an array and gives you a new arrow with the result of that function
+const numbers = [1, 2, 3, 4]
+const doubled = numbers.map((num) => num * 2)
+console.log(doubled)
+
+const drivers = [
+    {name: 'Ross Chastain', carNum: 1},
+    {name: 'Austin Cindric', carNum: 2},
+    {name: 'Austin Dillon', carNum: 3}
+]
+
+const driverNames = drivers.map((driver) => driver.name)
+console.log(driverNames)
+
+// .reduce function
+    // take an array and deduce it to a single value
+    // usually when you want to sum but can also be used for concat
+    // parameters: accumulator = the accumulator number that is being added to the number = that is being used to add to the accumulator. The 0 integer is what the accumulator starts at.  
+const sum = numbers.reduce((accumulator, number) => accumulator + number, 0)
+console.log(sum)
+
+// .filter function
+    // will filter out values from an array based on certain criteria 
+    // needs to return a boolean or truthy or falsey values 
+
+const numArray = [4, 283, 3920, 434, 23, 59, 100, 203939]
+const oddNumbers = numArray.filter(num => num % 2 != 0)
+console.log(oddNumbers)
