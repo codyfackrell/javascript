@@ -430,7 +430,7 @@ const myPromise = new Promise((resolve, reject) => {
 
 // .then is used for when the promise is resolved, it will then do the following. the resolve parameter above is, esentially equal to the function that we pass in .then
 // .catch is used for when the promise is rejected.
-// .finally is option and will happen whether the promise is resolved or rejected
+// .finally i s option and will happen whether the promise is resolved or rejected
 myPromise.then((value) => {
     console.log(value)
 }).catch((value) => {
